@@ -24,7 +24,7 @@ public class AddCartFlow {
 		driver.findElement(By.xpath("//p//a[contains(@href,'checkout/cart')]//i")).click();
 		String qtnty=driver.findElement(By.xpath("//div[@class='input-group btn-block']")).getAttribute("value");
 		driver.findElement(By.xpath("//td[text()='"+price+"']")).isDisplayed();
-		
+		System.out.println("Adding");
 	}
 
 }
